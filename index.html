@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scores Board</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>Home</h3>
+            <div class="points-scored_card">
+                <p class="points-scored_numbers" id="home-team_scores">0</p>
+            </div> 
+            <div class="add-points">
+                <div class="plus-one" onclick="addOnePointToHome()">
+                    <p id="home_add-one" >+1</p>
+                </div>
+                <div class="plus-two" onclick="addTwoPointsToHome()">
+                    <p id="home_add-two" >+2</p>
+                </div>
+                <div class="plus-three" onclick="addThreePointsToHome()">
+                    <p id="home_add-three" >+3</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Guest</h3>
+            <div class="points-scored_card">
+                <p class="points-scored_numbers" id="guest-team_scores">0</p>
+            </div>
+            <div class="add-points">
+                <div class="plus-one" onclick="addOnePointToGuest()">
+                    <p id="guest_add-one">+1</p>
+                </div>
+                <div class="plus-two" onclick="addTwoPointsToGuest()">
+                    <p id="guest_add-two">+2</p>
+                </div>
+                <div class="plus-three">
+                    <p id="guest_add-three" onclick="addThreePointsToGuest()">+3</p>
+                </div>          
+            </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
